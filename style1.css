@@ -1,0 +1,53 @@
+
+    body {
+        background-color:antiquewhite;
+
+    }
+
+    .product-container {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+
+    }
+
+    .product-card {
+        width: 200px;
+        text-align: center;
+        border: 1px solid green;
+        padding: 10px;
+        border-radius: 8px;
+
+    }
+
+    .v {
+        background-color: green;
+        color: white;
+        padding: 10px 20px;
+       
+    }
+
+    .app {
+        background-color:saddlebrown;
+        text-align: center;
+
+    }
+
+    .home,
+    .contact,
+    .Cart,
+    .project {
+        color: aliceblue;
+        margin: 5px;
+
+    }
+    
+  
+  .h1{
+    color:black;
+    text-align: center;
+  }
+  h2{
+    color: brown;
+    text-align: center;
+  }

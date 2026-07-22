@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Techno Shop</title>
+</head>
+<style>
+    body {
+        background-color: antiquewhite;
+    }
+
+    .app {
+        background-color: saddlebrown;
+        text-align: center;
+
+    }
+
+    .home,
+    .contact,
+    .Cart,
+    .project {
+        color: aliceblue;
+        margin: 5px;
+
+    }
+
+    form,
+    .o {
+        text-align: center;
+
+    }
+
+    .send {
+        color: white;
+        background-color: green;
+        padding: 10px 10px;
+    }
+
+    .go {
+        text-align: center;
+        background-color: green;
+        color: aliceblue;
+        padding: 10px 10px;
+    }
+</style>
+
+<body>
+    <div class="app">
+        <h1 style="color: aliceblue;">Techno Shop</h1>
+
+        <a class="home" href="Home.html">Home</a>
+        <a class="contact" href="contact.html">Contact</a>
+
+        <a class="project" href="smartphones.html">smartphones</a>
+        <a class="project" href="laptops.html">laptops</a>
+        <a class="project" href="headphones.html">headphones</a>
+    </div>
+    <div>
+        <br>
+        <script>
+            function check() {
+                let name = document.getElementById('Name').value;
+                let email = document.getElementById('Email').value;
+                let pass = document.getElementById('password').value;
+
+                if (name == "" || email == "" || pass == "") {
+                    alert("Please fill all fields");
+                    return false;
+                }
+                if (!email.endsWith("@azhar.edu.eg")) {
+                    alert("Email must end with @azhar.edu.eg");
+                    return false;
+                }
+                if (pass.length < 8) {
+                    alert("Password must be at least 8 characters");
+                    return false;
+                }
+                else
+                    return true;
+            }
+        </script>
+        <form onsubmit=" return check()">
+            <label for="Name">Name</label>
+            <input type="text" placeholder="Enter Your Name" id="Name" name="Name">
+            <br>
+            <br>
+            <label for="Email">Email</label>
+            <input type="email" placeholder="Enter Your Email " id="Email" name="Email">
+            <br>
+            <br>
+            <label for="password">password</label>
+            <input type="password" placeholder="Enter Your password" id="password" name="password">
+            <br>
+            <br>
+            <label for="Message">Message</label>
+            <br>
+            <br>
+            <textarea required cols="30" rows="4" placeholder="Enter Your Message" name="Message"
+                id="Message"></textarea>
+            <br>
+            <button class="send" type="submit">send</button>
+
+        </form>
+        <br>
+        <div class="o">
+            <a class="go" href="Home.html">Go To Home</a>
+        </div>
+
+
+</body>
+
+</html>
